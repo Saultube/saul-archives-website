@@ -1,12 +1,12 @@
 "$schema" = "./node_modules/wrangler/config-schema.json"
 name = "my-worker"
-main = "src/index.js"
+main = "/index.html"
 compatibility_date = "2026-02-05"
 workers_dev = false
 
 [route]
-pattern = "example.org/*"
-zone_name = "example.org"
+pattern = "saularchives.com/*"
+zone_name = "saularchives.com"
 
 [[kv_namespaces]]
 binding = "<MY_NAMESPACE>"
@@ -17,7 +17,7 @@ name = "my-worker-staging"
 
   [env.staging.route]
   pattern = "staging.example.org/*"
-  zone_name = "example.org"
+  zone_name = "saularchives.com"
 
   [[env.staging.kv_namespaces]]
   binding = "<MY_NAMESPACE>"
