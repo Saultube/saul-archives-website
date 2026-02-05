@@ -2,7 +2,7 @@
   "$schema": "./node_modules/wrangler/config-schema.json",
   // Top-level configuration
   "name": "saularchivessite",
-  "main": "src/index.js",
+  "main": "src/index.html",
   "compatibility_date": "2026-02-05",
   "workers_dev": false,
   "route": {
